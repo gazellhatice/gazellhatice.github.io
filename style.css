@@ -96,7 +96,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("resimler/background.jpg") no-repeat center;
+    background: url("background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
