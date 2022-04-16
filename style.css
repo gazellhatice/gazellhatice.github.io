@@ -96,7 +96,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("/blob/main/pictures/background.jpg") no-repeat center;
+    background: url("/blob/main/background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
