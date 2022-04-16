@@ -96,7 +96,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("resimler/me.jpg") no-repeat center;
+    background: url("resimler/background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -181,19 +181,46 @@ section .title::after{
 }
 
 /* about section styling */
-
-
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins',sans-serif;
+}
 .about .title::after{
     content: "who i am";
 }
-.about .about-content .text {
+.about .title{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 40%;
+    background-color: transparent;
+	box-shadow: 0 0 25px #111;
+	border: 6px solid #333;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-
-.about .about-content .text span{
+.about .about-content .right .text span{
     color: crimson;
 }
 .about .about-content p{
