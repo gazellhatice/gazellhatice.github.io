@@ -10,7 +10,13 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
-    })
+    });
+    //toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+
+    });
 });
 
 // slide-up script
@@ -20,8 +26,10 @@ $('.scroll-up-btn').click(function(){
 
 // typing animation script
 var typed = new Typed(".typing", {
-    strings: ["Software Engineer","Developer","Designer"],
+    strings: ["Software Engineer","Developer","Designer","Entrepreneur"],
     typeSpeed: 100,
     backSpeed:60,
     loop: true
 });
+
+
