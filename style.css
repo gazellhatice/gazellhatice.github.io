@@ -371,7 +371,7 @@ section{
     background: #111;
     content: "what i provide";
 }
-.services .serv-content .card{
+.services .serv-content .row{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -380,38 +380,35 @@ section{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card .box{
+.services .serv-content .row .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover {
+.services .serv-content .row:hover {
     background: crimson;
 }
-.services .serv-content .card:hover .box{
+.services .serv-content .row:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.services .serv-content .row i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.services .serv-content .row:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.services .serv-content .row .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: crimson;
 
 }
-.services .serv-content .card:hover .text{
+.services .serv-content .row:hover .text{
     color: #999;
 }
 /* skills section styling */
 
-.skills .title::after{
-    content: "what i know";
-}
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -482,6 +479,54 @@ section{
 .skills-content .right .java::before{
     width: 70%;
 }
+
+/* certificates section styling */
+.certificate{
+    color: #111;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.certificate .title::after{
+    content: "what did i win";
+}
+.certificate .certificate-content{
+    max-width: 900px;
+    width: 80%;
+    overflow: hidden;
+    border: 4px solid #222;
+    text-align: center;
+}
+.certificate .certificate-content .slider {
+    position: relative;
+    width: 400%;
+    left: 0;
+    float: left;
+    animation: 16s slayt infinite;
+}
+.certificate .certificate-content .slider img{
+    width: 25%;
+    float: left;
+    margin: 0 auto;
+}
+@keyframes slayt {
+    0%{left:0%;}
+    20%{left:0%;}
+    25%{left:-100%;}
+    45%{left:-100%;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left:-300%;}
+    90%{left:-300%;}
+}
+/* projects section styling */
+
 
 /* contact section styling */
 .contact{
