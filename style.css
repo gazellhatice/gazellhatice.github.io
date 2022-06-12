@@ -594,6 +594,16 @@ section{
 .projects .project-content p span{
     color: #fff;
 }
+#panel, #top{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(121, 119, 119);
+    border: solid 1px rgb(178, 175, 175);
+}
+#panel{
+    padding: 50px;
+    display: none;
+}
 
 /* contact section styling */
 .contact{

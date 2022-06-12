@@ -42,6 +42,13 @@ $(document).ready(function(){
 
     });
 
+    //panel script
+    $(document).ready(function(){
+        $("#top").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+
     //projects script
     for (let i = 0; i < data.length; i++) {
         const f = data[i];
